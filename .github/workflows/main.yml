@@ -61,7 +61,7 @@ jobs:
       env:
         DEEPFENCE_CONSOLE_IP: 68.183.39.219
         DEEPFENCE_KEY: W3mDm0W0Wqx5wb9ylc1zwPA4BUoV4dXywMlsm2KgaUI
-        FULL_IMAGE_NAME: ${{ env.GROUP }}/${{ env.REPO }}:sha-${{ github.sha }}
+        FULL_IMAGE_NAME: ${{ env.GROUP }}/${{ env.REPO }}:latest
         FAIL_CVE_COUNT: -1
         FAIL_CVE_SCORE: -1
       run: |
