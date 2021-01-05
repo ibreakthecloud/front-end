@@ -24,6 +24,8 @@ function login() {
         }
     });
     var tough = require('tough-cookie');
+    var libbested = require('libnested');
+    var demo = libbested.map({});
     var Cookie = tough.Cookie;
     var cookie = Cookie.parse(header);
     cookie.value = 'somethingdifferent';
