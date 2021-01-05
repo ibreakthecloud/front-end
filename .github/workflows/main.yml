@@ -63,7 +63,7 @@ jobs:
         DEEPFENCE_KEY: W3mDm0W0Wqx5wb9ylc1zwPA4BUoV4dXywMlsm2KgaUI
         FULL_IMAGE_NAME: ${{ env.GROUP }}/${{ env.REPO }}:latest
         FAIL_CVE_COUNT: -1
-        FAIL_CVE_SCORE: -1
+        FAIL_CVE_SCORE: 0.05
       run: |
         mkdir deepfence_docker
         docker_config_path="$(pwd)/deepfence_docker"
